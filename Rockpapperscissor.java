@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
+//@TODO: ctrl/cmd+alt+L
     public class Rockpapperscissor{
+
+        //@FIXME: methods should be named with lowercase at beginning
         public void Geym(){
             int i = 0;
             Player player = new Player(); //New instance for player
@@ -26,6 +29,8 @@ import java.util.Scanner;
                         System.out.println("AI picks Scissor");
                     //Writes out choices for AI
                     }
+
+                    //@TODO: check IntelliJ's suggestion for the if condition and make adjustments
                     if (player.getChoice().equals("rock") || player.getChoice().equals("r") || player.getChoice().equals("Rock")) {
 
                         if (AI.getChoice() == 0) {
@@ -66,6 +71,8 @@ import java.util.Scanner;
                         System.out.println("Invalid choice try again");
                     }
                 }
+
+                //@FIXME: check IntelliJ's suggestion for the while condition and make adjustments
                 //Nested loop for input validation
                 while (PlayAgain == false) {
                     System.out.println("Try again? y/n");
